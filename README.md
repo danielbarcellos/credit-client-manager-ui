@@ -1,27 +1,44 @@
-# credit-client-manager-ui
+# Gerenciamento clientes e seus limites de crédito (CCM User Interface)
+UI para uso no sistema CCM.
 
-> Gerenciamento de clientes e seus limites de credito (User Interface).
+## A solução
+Esta solução visa disponibilizar uma ui que consume os serviços relativos ao sistema de gerenciamento de crédito de clientes (CCM). Para construir este projetos foram utilizados [Vue js](https://vuejs.org/) como framework progressivo de javascript numa single application model.
 
-## Build Setup
+## Iniciando
+Clone de [GIT Hub](https://github.com/danielbarcellos/credit-client-manager-ui). É necessário ter instalado o [Node.js](https://nodejs.org/en/):
 
 ``` bash
-# install dependencies
+# clone o repositório
+git clone https://github.com/danielbarcellos/credit-client-manager-ui
+cd credit-client-manager-ui
+
+# instalar as dependencias
 npm install
 
-# serve with hot reload at localhost:8080
+# o servidor estará disponivel em localhost:9000
 npm run dev
 
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run all tests
-npm test
 ```
+O sistema estará disponível em [http://localhost:9000](http://localhost:9000)
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## O que fazer quando estiver iniciado?
+
+Você pode testar se está tudo ok tentando acesso à interface de gerenciamento de clientes em [http://localhost:9000](http://localhost:9000).
+
+## Built With
+
+* [Vue js](https://vuejs.org/) - Plataforma de aplicações.
+* [H2 Database Engine](http://h2database.com/html/main.html) - Banco de dados em memória.
+* [Swagger 2](https://swagger.io/) - Documentação de API.
+## Versionamento
+
+We use [Github](https://github.com) for versioning. For the versions available, see the [tags on this repository](https://github.com/danielbarcellos/credit-client-manager). 
+
+## Authors
+
+* **Daniel Barcellos** - *Initial work* - [Daniel Barcellos](https://github.com/danielbarcellos)
+
+## Agradecimentos
+
+* My family
+* Google
