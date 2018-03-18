@@ -1,5 +1,5 @@
 <template>
-    <el-dialog title="Cliente" v-model="dialogFormVisible" :close-on-click-modal="false" :show-close="false">
+    <el-dialog title="Cliente" :visible.sync="dialogFormVisible" :close-on-click-modal="false" :show-close="false">
         <el-form :model="form">
             <el-form-item label="id" :label-width="formLabelWidth">
                 <el-input :disabled="true" v-model="form.id" auto-complete="off"></el-input>
@@ -28,7 +28,7 @@
         </el-form>
         <div slot="footer" class="dialog-footer">
             <el-button :plain="true" type="danger" v-on:click="canclemodal">Cancel</el-button>
-            <el-button :plain="true" @click="updateForm(form)">Save</el-button>
+            <el-button :plain="true" v-on:click="updateForm(form)">Save</el-button>
         </div>
     </el-dialog>
 </template>
@@ -40,6 +40,8 @@
       
 		 data() {
             return {
+				isVisible: this.dialogFormVisible,
+				tbForm: this.form,
                 formLabelWidth: '120px',
 				formLabelWidthId: '20px'
             }
@@ -62,6 +64,7 @@
 				})
                     .then(function (response) {
                         console.log(response);
+						//this.tbForm = response.data;
                     })
                     .catch(function (error) {
                         console.log(error);
@@ -77,14 +80,14 @@
 				})
                     .then(function (response) {
                         console.log(response);
-                        //this.form = response.data;
-
+                        //this.tbForm = response.data;
                     })
                     .catch(function (error) {
                         console.log(error);
                     });
             }
-            	location.reload();
+            	
+				location.reload();
             },
             canclemodal: function () {
                 this.$emit('canclemodal');

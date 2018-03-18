@@ -79,14 +79,6 @@
         },
         mounted () {
             this.getCustomers();
-            Bus.$on('filterResultData', (data) => {
-                this.tableData = data.content;
-                this.total = data.total_pages;
-                this.pageSize = data.count;
-                this.email = data.email;
-                this.sex = data.sex;
-
-            });
         },
 
         methods: {
