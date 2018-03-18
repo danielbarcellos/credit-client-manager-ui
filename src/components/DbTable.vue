@@ -55,7 +55,7 @@
         data(){
             return {
                 tableData: [],
-                apiUrl: 'http://localhost:8081/ccm/api/clientes',
+                apiUrl: 'http://localhost:8080/ccm/api/clientes',
                 total: 0,
                 pageSize: 10,
                 currentPage: 1,
@@ -129,7 +129,7 @@
             editItem: function (index, rows) {
                 this.dialogFormVisible = true;
                 const itemId = rows[index].id;
-                const idurl = 'http://127.0.0.1:8081/ccm/api/clientes/' + itemId;
+                const idurl = 'http://127.0.0.1:8080/ccm/api/clientes/' + itemId;
                 this.$axios.get(idurl).then((response) => {
                     this.form = response.data;
                 }).catch(function (response) {
@@ -139,7 +139,7 @@
             
             removeItem: function(index, rows) {
                 const itemId = rows[index].id;
-                const idurl = 'http://127.0.0.1:8081/ccm/api/clientes/' + itemId;
+                const idurl = 'http://127.0.0.1:8080/ccm/api/clientes/' + itemId;
                 this.$axios.delete(idurl).then((response) => {
                 rows.splice(index, 1);
                 }).catch(function (response) {

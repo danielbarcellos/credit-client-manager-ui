@@ -1,7 +1,7 @@
 <template>
     <el-dialog title="Cliente" v-model="dialogFormVisible" :close-on-click-modal="false" :show-close="false">
         <el-form :model="form">
-            <el-form-item label="id" :label-width="formLabelWidth">
+            <el-form-item label="id" :label-width="formLabelWidthId">
                 <el-input :disabled="true" v-model="form.id" auto-complete="off"></el-input>
             </el-form-item>
             <el-form-item label="Nome Cliente" :label-width="formLabelWidth">
@@ -40,7 +40,8 @@
       
 		 data() {
             return {
-                formLabelWidth: '120px'
+                formLabelWidth: '120px',
+				formLabelWidthId: '20px'
             }
         },
 
