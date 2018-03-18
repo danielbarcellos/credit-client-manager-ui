@@ -27,18 +27,22 @@ Você pode testar se está tudo ok tentando acesso à interface de gerenciamento
 
 ## Built With
 
-* [Vue js](https://vuejs.org/) - Plataforma de aplicações.
-* [H2 Database Engine](http://h2database.com/html/main.html) - Banco de dados em memória.
-* [Swagger 2](https://swagger.io/) - Documentação de API.
+* [Vue js](https://vuejs.org/) - The Progressive JavaScript Framework.
+* [Node.js](https://nodejs.org/en/) - Node.js® is a JavaScript runtime.
+* [Element ui](https://github.com/ElemeFE/element) - Api de ui.
+
 ## Versionamento
 
 We use [Github](https://github.com) for versioning. For the versions available, see the [tags on this repository](https://github.com/danielbarcellos/credit-client-manager). 
 
 ## Authors
 
-* **Daniel Barcellos** - *Initial work* - [Daniel Barcellos](https://github.com/danielbarcellos)
+* **Boyle Gu** - *Initial work* - [Boyle Gu](https://github.com/boylegu)
+* **Daniel Barcellos** - *Fork* - [Daniel Barcellos](https://github.com/danielbarcellos)
 
 ## Agradecimentos
+
+Este trabalho foi em sua grande parte desenvolvido baseando-se no esforço de [Boyle Go](https://github.com/boylegu)
 
 * My family
 * Google
