@@ -1,7 +1,7 @@
 <template>
     <el-dialog title="Cliente" v-model="dialogFormVisible" :close-on-click-modal="false" :show-close="false">
         <el-form :model="form">
-            <el-form-item label="id" :label-width="formLabelWidthId">
+            <el-form-item label="id" :label-width="formLabelWidth">
                 <el-input :disabled="true" v-model="form.id" auto-complete="off"></el-input>
             </el-form-item>
             <el-form-item label="Nome Cliente" :label-width="formLabelWidth">
@@ -50,7 +50,7 @@
             console.log(formName);
             let itemId = formName.id;
             if(itemId) {
-            	this.$axios.put('http://localhost:8081/ccm/api/clientes/' + itemId, {
+            	this.$axios.put('http://localhost:8080/ccm/api/clientes/' + itemId, {
 				    "id": formName.id,
 				    "name": formName.name,
 				    "limits": {
@@ -67,7 +67,7 @@
                         console.log(error);
                     });
             }else {
-            this.$axios.post('http://localhost:8081/ccm/api/clientes', {
+            this.$axios.post('http://localhost:8080/ccm/api/clientes', {
 				    "name": formName.name,
 				    "limits": {
 				        "value": formName.limits.value,
