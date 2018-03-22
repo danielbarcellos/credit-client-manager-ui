@@ -39,11 +39,9 @@ We use [Github](https://github.com) for versioning. For the versions available, 
 
 ## Authors
 
-* **Boyle Gu** - *Initial work* - [Boyle Gu](https://github.com/boylegu)
-* **Daniel Barcellos** - *Fork and improvments* - [Daniel Barcellos](https://github.com/danielbarcellos)
+* **Daniel Barcellos** - *Intial work* - [Daniel Barcellos](https://github.com/danielbarcellos)
 
 ## Agradecimentos
 
-* Este trabalho foi em sua grande parte desenvolvido baseando-se no esforço de [Boyle Go](https://github.com/boylegu)
 * My family
 * Google
