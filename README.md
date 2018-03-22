@@ -7,8 +7,6 @@ Esta solução visa disponibilizar uma ui que consume os serviços relativos ao 
 ## Iniciando
 Clone de [GIT Hub](https://github.com/danielbarcellos/credit-client-manager-ui). É necessário ter instalado o [Node.js](https://nodejs.org/en/):
 
-> By default a porta 8080 estará ativa, mas é possível caso já esteja ocupada que o bundler defina nova porta progressivamente, ou seja, 8081 será a próxima porta caso a default esteja ocupada.
-
 ``` bash
 # clone o repositório
 git clone https://github.com/danielbarcellos/credit-client-manager-ui
@@ -23,6 +21,7 @@ npm run dev
 ```
 O sistema estará disponível em [http://localhost:8080](http://localhost:8080)
 
+> By default a porta 8080 estará ativa, mas é possível caso já esteja ocupada que o bundler defina nova porta progressivamente, ou seja, 8081 será a próxima porta caso a default esteja ocupada.
 
 ## O que fazer quando estiver iniciado?
 
