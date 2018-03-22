@@ -1,21 +1,49 @@
-# credit-client-manager-ui
+# Gerenciamento clientes e seus limites de crédito (CCM User Interface)
+UI para uso no sistema CCM.
 
-> Gerenciamento de clientes e credito (UI).
+## A solução
+Esta solução visa disponibilizar uma ui que consume os serviços relativos ao sistema de gerenciamento de crédito de clientes (CCM). Para construir este projetos foram utilizados [Vue js](https://vuejs.org/) como framework progressivo de javascript numa single application model.
 
-## Build Setup
+## Iniciando
+Clone de [GIT Hub](https://github.com/danielbarcellos/credit-client-manager-ui). É necessário ter instalado o [Node.js](https://nodejs.org/en/):
 
 ``` bash
-# install dependencies
+# clone o repositório
+git clone https://github.com/danielbarcellos/credit-client-manager-ui
+cd credit-client-manager-ui
+
+# instalar as dependencias
 npm install
 
-# serve with hot reload at localhost:8080
+# o servidor estará disponivel em localhost:8080
 npm run dev
 
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
 ```
+O sistema estará disponível em [http://localhost:8080](http://localhost:8080)
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+> By default a porta 8080 estará ativa, mas é possível caso já esteja ocupada que o bundler defina nova porta progressivamente, ou seja, 8081 será a próxima porta caso a default esteja ocupada.
+
+## O que fazer quando estiver iniciado?
+
+Você pode testar se está tudo ok tentando acesso à interface de gerenciamento de clientes em [http://localhost:9000](http://localhost:9000).
+
+## Built With
+
+* [Vue js](https://vuejs.org/) - The Progressive JavaScript Framework.
+* [Node.js](https://nodejs.org/en/) - Node.js® is a JavaScript runtime.
+* [Bootstrap + Vue](https://bootstrap-vue.js.org) - Ui component framework.
+
+## Versionamento
+
+We use [Github](https://github.com) for versioning. For the versions available, see the [tags on this repository](https://github.com/danielbarcellos/credit-client-manager). 
+
+## Authors
+
+* **Boyle Gu** - *Initial work* - [Boyle Gu](https://github.com/boylegu)
+* **Daniel Barcellos** - *Fork and improvments* - [Daniel Barcellos](https://github.com/danielbarcellos)
+
+## Agradecimentos
+
+* Este trabalho foi em sua grande parte desenvolvido baseando-se no esforço de [Boyle Go](https://github.com/boylegu)
+* My family
+* Google
